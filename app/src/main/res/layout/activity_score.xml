@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFD740"
+    android:backgroundTint="#7DC32D"
+    android:backgroundTintMode="screen"
+    tools:context=".ScoreActivity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="202dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="casual"
+        android:text="Results:"
+        android:textAlignment="center"
+        android:textColor="#E61818"
+        android:textSize="48sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnReview"
+        android:layout_width="137dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="116dp"
+        android:text="Review"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="129dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:text="Exit"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnReview" />
+
+    <TextView
+        android:id="@+id/textFeedback"
+        android:layout_width="304dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="92dp"
+        android:text="Feedback:"
+        android:textAlignment="center"
+        android:textColor="#057E37"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnExit" />
+
+    <TextView
+        android:id="@+id/textScore"
+        android:layout_width="263dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="36dp"
+        android:fontFamily="monospace"
+        android:text="Score:"
+        android:textAlignment="center"
+        android:textColor="#3F51B5"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnReview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtReview"
+        android:layout_width="453dp"
+        android:layout_height="325dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textFeedback" />
+
+    <Button
+        android:id="@+id/btnRestart"
+        android:layout_width="121dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="24dp"
+        android:text="Restart"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textFeedback"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
